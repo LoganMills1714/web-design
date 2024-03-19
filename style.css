@@ -4,3 +4,56 @@
   font-weight: 200;
   font-style: normal;
 }
+
+.navbar {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+}
+
+.navbar li {
+  padding: 1%;
+  margin: 1%;
+  width: auto;
+  height: auto;
+  background-color: #000044;
+  border-radius: 20px;
+}
+
+.dropdown {
+  list-style-type: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  right:3%;
+}
+
+
+.text_box {
+  height:auto;
+  width:auto;
+  background-color: #000044;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 20px;
+}
+
+body {
+  background-color: #000034;
+  color: #FFFFFF;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+

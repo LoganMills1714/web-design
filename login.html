@@ -11,42 +11,35 @@
   </head>
   <body class="montserrat-font">
     <header>
-      <h1 id="welcome"></h1>
       <h1>Cybersecurity</h1>
       <!-- Change name later to something more creative -->
     </header>
     <hr />
-    <nav>
-      <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <!-- Links and stuff -->
-        <li><a href="about.html">About Me</a></li>
-        <li>
-          Personal
-          <ul>
-            <li><a href="passwords.html">Passwords</a></li>
-            <li><a href="phishing.html">Phishing</a></li>
-          </ul>
-        </li>
-        <li>
-          Business
-          <ul>
-            <li><a href="sql.html">SQL</a></li>
-            <li><a href="xss.html">XSS</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <hr />
     <main>
+        <h1 id="welcome"></h1>
+        <h1 class="centered">Login</h1>
+        <form class="centered">
+            <input type="username" id="username"><br><br>
+            <button type="submit" onClick="enter()">Submit</button>
+        </form>
+        <script>
+            var today = new Date();
+            var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000); // plus 30 days
 
+            function setCookie(name, value){
+                document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
+            }
+         
+            function storeValues(form){
+                setCookie("userName", form.submit.value);
+                return true;
+            }
+        </script>
     </main>
     <footer>
       <p style="font-size: 12px; text-align: center">
         Copyright 2024 - Logan Mills
       </p>
     </footer>
-    <script type="text/javascript" src="username.js">
-    </script>
   </body>
 </html>
