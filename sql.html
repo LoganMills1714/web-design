@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
-  <body class="montserrat-font">
-    <header>
-      <h1 id="welcome"></h1>
-      <h1>Cybersecurity</h1>
-      <!-- Change name later to something more creative -->
-    </header>
-    <hr />
-    <nav>
-      <ul class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="passwords.html">Passwords</a></li>
-        <li><a href="phishing.html">Phishing</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="xss.html">XSS</a></li>
-      </ul>
-    </nav>
-    <hr />
-    <main>
-      <br>
-      <div class="text_box">
-        <h1 class="centered"><em>SQL</em></h1>
-        <p style="text-align: justify;"style="text-align: justify;">SQL stands for structured query language and is a database used by most websites. SQL is often used to store user data such as usernames and passwords. When you input a username for example, it's put into a search query that might look something like SELECT 'user' AND 'pass' FROM users. If you look at the previous statement, instead of inputting user you could input user'--, the apostrophe ends the statement early and the two dashes comment out the ending apostrophe allowing you to bypass. You could also insert operators like the asterisk which will select all data from the database. These types of attacks are very common and can be mitigated by making sure you remove any special characters from inputted data</p>
-      </div>
-      <br>
-    </main>
-    <footer>
-      <br>
-      <hr>
-      <br>
-      <p style="font-size: 12px; text-align: center">
-        Copyright 2024 - Logan Mills
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="montserrat-font">
+  <header>
+    <h1 id="welcome"></h1>
+    <h1>Logan Mills</h1>
+    <!-- Change name later to something more creative -->
+  </header>
+  <hr />
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="passwords.html">Passwords</a></li>
+      <li><a href="phishing.html">Phishing</a></li>
+      <li><a href="sql.html">SQL</a></li>
+      <li><a href="xss.html">XSS</a></li>
+    </ul>
+  </nav>
+  <hr />
+  <main>
+    <br>
+    <div class="text_box">
+      <h1 class="centered"><em>SQL</em></h1>
+      <p style="text-align: justify;" style="text-align: justify;">SQL stands for structured query language and is a
+        database used by most websites. SQL is often used to store user data such as usernames and passwords. When you
+        input a username for example, it's put into a search query that might look something like SELECT 'user' AND
+        'pass' FROM users. If you look at the previous statement, instead of inputting user you could input user'--, the
+        apostrophe ends the statement early and the two dashes comment out the ending apostrophe allowing you to bypass.
+        You could also insert operators like the asterisk which will select all data from the database. These types of
+        attacks are very common and can be mitigated by making sure you remove any special characters from inputted data
       </p>
-    </footer>
-    <script type="text/javascript" src="username.js">
-    </script>
-  </body>
+    </div>
+    <br>
+  </main>
+  <footer>
+    <br>
+    <hr>
+    <br>
+    <p style="font-size: 12px; text-align: center">
+      Copyright 2024 - Logan Mills
+    </p>
+  </footer>
+  <script type="text/javascript" src="username.js">
+  </script>
+</body>
+
 </html>

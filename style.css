@@ -30,13 +30,13 @@
 
 .right {
   position: absolute;
-  right:3%;
+  right: 3%;
 }
 
 
 .text_box {
-  height:auto;
-  width:auto;
+  height: auto;
+  width: auto;
   background-color: #000044;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -56,4 +56,3 @@ a {
   color: #FFFFFF;
   text-decoration: none;
 }
-

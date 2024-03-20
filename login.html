@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
-  <body class="montserrat-font">
-    <header>
-      <h1>Cybersecurity</h1>
-      <!-- Change name later to something more creative -->
-    </header>
-    <hr />
-    <main>
-        <h1 id="welcome"></h1>
-        <h1 class="centered">Login</h1>
-        <form class="centered">
-            <input type="username" id="username"><br><br>
-            <button type="submit" onClick="enter()">Submit</button>
-        </form>
-        <script>
-            var today = new Date();
-            var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000); // plus 30 days
 
-            function setCookie(name, value){
-                document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
-            }
-         
-            function storeValues(form){
-                setCookie("userName", form.submit.value);
-                return true;
-            }
-        </script>
-    </main>
-    <footer>
-      <p style="font-size: 12px; text-align: center">
-        Copyright 2024 - Logan Mills
-      </p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="montserrat-font">
+  <header>
+    <h1>Logan Mills</h1>
+    <!-- Change name later to something more creative -->
+  </header>
+  <hr />
+  <main>
+    <h1 id="welcome"></h1>
+    <h1 class="centered">Login</h1>
+    <form class="centered">
+      <input type="username" id="username"><br><br>
+      <button type="submit" onClick="enter()">Submit</button>
+    </form>
+    <script>
+      var today = new Date();
+      var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000); // plus 30 days
+
+      function setCookie(name, value) {
+        document.cookie = name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
+      }
+
+      function storeValues(form) {
+        setCookie("userName", form.submit.value);
+        return true;
+      }
+    </script>
+  </main>
+  <footer>
+    <p style="font-size: 12px; text-align: center">
+      Copyright 2024 - Logan Mills
+    </p>
+  </footer>
+</body>
+
 </html>
